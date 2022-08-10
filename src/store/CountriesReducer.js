@@ -11,9 +11,8 @@ export const getCountriesThunk = createAsyncThunk(
     }
 )
 
-
 export const initialeState = {
-    countties : []
+    countries : []
 }
 
 export const CountriesSlice = createSlice({
@@ -21,11 +20,10 @@ export const CountriesSlice = createSlice({
     initialState : initialeState,
     reducers: {
         setCountries : (state, action) =>{
-            state.countties = action.payload
+            state.countries = action.payload
         }
     }
 })
-
 
 
 export const countriesAction = CountriesSlice.actions

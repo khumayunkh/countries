@@ -7,6 +7,7 @@ export const getCountriesThunk = createAsyncThunk(
     async (_, {dispatch}) => {
         const response = await getContries()
         dispatch(countriesAction.setCountries(response.data))
+        console.log(response.data)
     }
 )
 

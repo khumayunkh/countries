@@ -1,12 +1,21 @@
 .countries_in{
+    margin-top: 5%;
     display: flex;
+    width: 100%;
+    min-height: 800px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .country{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    width: 30%;
-    margin: 1%;
+    align-items: center;
+    width: 33%;
+}
+
+img{
+    width: 80%;
 }

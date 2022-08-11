@@ -25,6 +25,46 @@ function Body(){
                         <h3>dwdaddcrrrrrrrr</h3>
                         <h3>dwdaddcrrrrrrrr</h3>
                    </div>
+                   <div className={style.country}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png"/>
+                        <h2>Flag_of_Uzbekistan</h2>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                   </div>
+                   <div className={style.country}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png"/>
+                        <h2>Flag_of_Uzbekistan</h2>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                   </div>
+                   <div className={style.country}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png"/>
+                        <h2>Flag_of_Uzbekistan</h2>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                   </div>
+                   <div className={style.country}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png"/>
+                        <h2>Flag_of_Uzbekistan</h2>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                   </div>
+                   <div className={style.country}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png"/>
+                        <h2>Flag_of_Uzbekistan</h2>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                        <h3>dwdaddcrrrrrrrr</h3>
+                   </div>
                 </div>
             </div>
         </div>

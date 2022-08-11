@@ -1,0 +1,12 @@
+.countries_in{
+    display: flex;
+}
+
+.country{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+    margin: 1%;
+}

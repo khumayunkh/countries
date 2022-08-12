@@ -27,7 +27,7 @@ function Body(){
          <div className={style.countries}>
             <div className={style.container}>
                 <div className={style.countries_in}>
-                   {currentPosts.map( item => <div className={style.country}>
+                   {currentPosts.map( item => <div key={item.name.official} className={style.country}>
                     <img src={item.flags.png}/>
                     <h2>{item.name.official}</h2>
                     <h3>Region : {item.region}</h3>

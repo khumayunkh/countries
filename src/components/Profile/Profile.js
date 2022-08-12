@@ -16,7 +16,9 @@ function Profile(){
 
     return(
         <>
-        <h2>{profile}</h2>
+        {country.map(item => <div>
+            <h2>{item.name.official}</h2>
+        </div>)}
         </>
     )
 }

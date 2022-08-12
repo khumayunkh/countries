@@ -24,7 +24,7 @@ export const getCountryThunk = createAsyncThunk(
 export const initialeState = {
     countries : [],
     countryByName : [],
-    country: undefined ,
+    country: [],
     isLoading : false
 }
 

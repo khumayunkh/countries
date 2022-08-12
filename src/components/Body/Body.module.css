@@ -1,5 +1,6 @@
 .countries_in{
     margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
     width: 100%;
     min-height: 800px;
@@ -15,8 +16,14 @@
     align-items: center;
     width: 33%;
     line-height: 0.2px;
+    margin-bottom: 3%;
 }
 
 img{
     width: 80%;
+}
+
+.btn{
+    margin-top: 1%;
+    text-decoration: none;
 }

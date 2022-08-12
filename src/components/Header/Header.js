@@ -7,11 +7,11 @@ import style from './Header.module.css'
 function Header(){
     const inputRef = useRef('')
     const dispatch = useDispatch()
-
+    
     const filterByName = () => {
         dispatch(countriesAction.searchCountry(inputRef.current.value))
     }
-
+    
     return(
         <>
         <div className={style.header}>

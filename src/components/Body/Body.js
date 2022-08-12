@@ -32,7 +32,7 @@ function Body(){
                     <h2>{item.name.official}</h2>
                     <h3>Region : {item.region}</h3>
                     <h3>Status: {item.status}</h3>
-                    <h3>Time Zone : {item.timezones}</h3>
+                    <h3 className={style.time_zone}>Time Zone : {item.timezones[0]}, {item.timezones[1]}, {item.timezones[2]}</h3>
                     <NavLink className={style.btn} to={'/profile/' + item.name.official}>see more</NavLink>
                    </div>)}
                    <Pagination

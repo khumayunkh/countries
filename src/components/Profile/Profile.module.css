@@ -14,3 +14,7 @@
 img{
     width: 85%;
 }
+
+map {
+    display: inline;
+}

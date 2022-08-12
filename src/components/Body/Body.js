@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCountriesThunk } from "../../store/CountriesReducer";
 import style from './Body.module.css'
+import Pagination from "./Pagination/Pagination";
 
 function Body(){
     const {countries} = useSelector(state => state.countries)
@@ -26,13 +27,18 @@ function Body(){
             <div className={style.container}>
                 <div className={style.countries_in}>
                    {currentPosts.map( item => <div className={style.country}>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png"/>
+                    <img src={item.flags.svg}/>
                     <h2>Flag_of_Uzbekistan</h2>
                     <h3>dwdaddcrrrrrrrr</h3>
                     <h3>dwdaddcrrrrrrrr</h3>
                     <h3>dwdaddcrrrrrrrr</h3>
                     <h3>dwdaddcrrrrrrrr</h3>
                    </div>)}
+                   <Pagination
+                   todosPerPage={countriesPerPage}
+                   totalTodos={countries.length}
+                   paginate={paginate}
+                   />
                 </div>
             </div>
         </div>

@@ -27,12 +27,11 @@ function Body(){
             <div className={style.container}>
                 <div className={style.countries_in}>
                    {currentPosts.map( item => <div className={style.country}>
-                    <img src={item.flags.svg}/>
-                    <h2>Flag_of_Uzbekistan</h2>
-                    <h3>dwdaddcrrrrrrrr</h3>
-                    <h3>dwdaddcrrrrrrrr</h3>
-                    <h3>dwdaddcrrrrrrrr</h3>
-                    <h3>dwdaddcrrrrrrrr</h3>
+                    <img src={item.flags.png}/>
+                    <h2>{item.name.official}</h2>
+                    <h3>Region : {item.region}</h3>
+                    <h3>Status: {item.status}</h3>
+                    <h3>Time Zone : {item.timezones}</h3>
                    </div>)}
                    <Pagination
                    todosPerPage={countriesPerPage}

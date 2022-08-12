@@ -12,7 +12,9 @@ export const getCountriesThunk = createAsyncThunk(
 )
 
 export const initialeState = {
-    countries : []
+    countries : [],
+    countryByName : [],
+    isLoading : false
 }
 
 export const CountriesSlice = createSlice({
@@ -21,8 +23,25 @@ export const CountriesSlice = createSlice({
     reducers: {
         setCountries : (state, action) =>{
             state.countries = action.payload
+        },
+        searchCountry :(state,action) => {
+            state.countries = state.countryByName.filter(item => item.name.official.toLowerCase().includes(action.payload))
         }
-    }
+    },
+    extraReducers: (builder) => {
+        builder.addCase(
+            getCountriesThunk.pending, (state) => {
+                state.isLoading = true
+            })
+        builder.addCase(
+            getCountriesThunk.fulfilled, (state) => {
+                state.isLoading = false
+                state.countryByName = action.payload
+            })
+        builder.addCase(
+            getCountriesThunk.rejected, (state, action) => {
+            })
+        }
 })
 
 

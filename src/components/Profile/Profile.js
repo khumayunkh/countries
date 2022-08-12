@@ -9,16 +9,22 @@ function Profile(){
     const {profile} = useParams()
     const dispatch = useDispatch()
     const {country} = useSelector(state => state.countries)
-
+    
     useEffect(() => {
         dispatch(getCountryThunk(profile))
     },[])
-
+    
     return(
         <>
-        {country.map(item => <div>
-            <h2>{item.name.official}</h2>
-        </div>)}
+        <div className={style.country}>
+            <div className={style.container}>
+                {country.map(item => 
+                <div key={item.name.official} className={style.country_in}>
+                    <img src={item.flags.svg}/>
+                    
+                </div>)}
+            </div>
+        </div>
         </>
     )
 }

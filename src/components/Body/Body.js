@@ -33,7 +33,7 @@ function Body(){
                     <h3>Region : {item.region}</h3>
                     <h3>Status: {item.status}</h3>
                     <h3>Time Zone : {item.timezones}</h3>
-                    <NavLink className={style.btn} to='/profile'>see more</NavLink>
+                    <NavLink className={style.btn} to={'/profile/' + item.name.official}>see more</NavLink>
                    </div>)}
                    <Pagination
                    todosPerPage={countriesPerPage}

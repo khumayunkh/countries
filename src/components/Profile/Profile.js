@@ -1,11 +1,17 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
 import style from './Profile.module.css'
 
 
 function Profile(){
+    const {profile} = useParams()
+    const dispatch = useDispatch()
+
+    
     return(
         <>
-        hello
+        <h2>{profile}</h2>
         </>
     )
 }

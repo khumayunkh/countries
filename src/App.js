@@ -10,7 +10,7 @@ function App() {
       <Header/>
       <Routes>
         <Route
-          path='/profile'
+          path='/profile/:profile'
           element={<Profile/>}
         />
         <Route

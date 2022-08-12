@@ -6,8 +6,8 @@ export const getCountriesThunk = createAsyncThunk(
     'countries/getCountriesThunk',
     async (_, {dispatch}) => {
         const response = await getContries()
-        dispatch(countriesAction.setCountries(response.data))
-        console.log(response.data)
+        const data = await response.data
+        return data
     }
 )
 
@@ -34,8 +34,9 @@ export const CountriesSlice = createSlice({
                 state.isLoading = true
             })
         builder.addCase(
-            getCountriesThunk.fulfilled, (state) => {
+            getCountriesThunk.fulfilled, (state,action) => {
                 state.isLoading = false
+                state.countries = action.payload
                 state.countryByName = action.payload
             })
         builder.addCase(

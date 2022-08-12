@@ -1,12 +1,22 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
-import { getContries } from "../api/api"
+import { getCountries, getCountry } from "../api/api"
 
 
 export const getCountriesThunk = createAsyncThunk(
     'countries/getCountriesThunk',
-    async (_, {dispatch}) => {
-        const response = await getContries()
+    async () => {
+        const response = await getCountries()
         const data = await response.data
+        return data
+    }
+)
+
+export const getCountryThunk = createAsyncThunk(
+    'country/getCountryThunk',
+    async (name) => {
+        const response = await getCountry(name)
+        const data = await response.data
+        console.log(response.data)
         return data
     }
 )
@@ -14,6 +24,7 @@ export const getCountriesThunk = createAsyncThunk(
 export const initialeState = {
     countries : [],
     countryByName : [],
+    country: undefined ,
     isLoading : false
 }
 
@@ -41,6 +52,18 @@ export const CountriesSlice = createSlice({
             })
         builder.addCase(
             getCountriesThunk.rejected, (state, action) => {
+            })
+        builder.addCase(
+            getCountryThunk.pending, (state) => {
+                state.isLoading = true
+            })
+        builder.addCase(
+            getCountryThunk.fulfilled, (state,action) => {
+                state.isLoading = false
+                state.country = action.payload
+            })
+        builder.addCase(
+            getCountryThunk.rejected, (state, action) => {
             })
         }
 })

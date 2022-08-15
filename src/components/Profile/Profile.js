@@ -24,9 +24,7 @@ function Profile(){
                     <h1>{item.name.official}</h1>
                     <h2>Capital : {item.capital}</h2>
                     <h2>Population : {item.population} people</h2>
-                    <map>
-                        <area href={item.maps.openStreetMaps}/>
-                    </map>
+                    
                 </div>)}
             </div>
         </div>

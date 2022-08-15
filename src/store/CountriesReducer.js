@@ -16,7 +16,6 @@ export const getCountryThunk = createAsyncThunk(
     async (name) => {
         const response = await getCountry(name)
         const data = await response.data
-        console.log(response.data)
         return data
     }
 )

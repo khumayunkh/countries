@@ -15,7 +15,7 @@ function Body(){
     useEffect(() => {
         dispatch(getCountriesThunk())
     },[]) 
-
+    
     const indexOfLastPost = currentPage * countriesPerPage;
     const indexOfFirstPost = indexOfLastPost - countriesPerPage;
     const currentPosts = countries.slice(indexOfFirstPost, indexOfLastPost)

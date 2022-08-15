@@ -5,17 +5,18 @@
     align-items: flex-start;
     width: 100%;
     min-height: 600px;
-    background-image: url('https://www.vectorlogo.zone/logos/un/un-ar21.png');
+    background-image: url('https://selegnamedia.com/wp-content/uploads/2022/01/UN.png');
     background-repeat: no-repeat;
-    background-size:cover;
-    margin: 0 auto;
+    background-size: 70%;
+    background-position: center;
 }
 
 .input{
+    margin-top: 1%;
     font-weight: 300;
     border: none;
     background-color: rgb(226, 226, 226);
-    width: 40%;
+    width: 60%;
     border-radius: 10px;
     height: 45px;
     display: flex;
@@ -41,7 +42,36 @@
         height: 400px;
         background-image: url('https://www.vectorlogo.zone/logos/un/un-ar21.png');
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size:150%;
         margin: 0 auto;
     }   
+}
+
+@media(max-width:550px){
+    .header_in{
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        height: 200px;
+        background-image: url('https://www.vectorlogo.zone/logos/un/un-ar21.png');
+        background-repeat: no-repeat;
+        background-size:120%;
+        margin: 0 auto;
+    }
+    .input{
+        margin-top: 20%;
+        font-weight: 300;
+        border: none;
+        background-color: rgb(226, 226, 226);
+        width: 80%;
+        border-radius: 10px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(54, 54, 54);
+        padding-left: 2%;
+    }
 }

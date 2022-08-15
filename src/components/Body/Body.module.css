@@ -14,9 +14,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 33%;
     line-height: 0.2px;
     margin-bottom: 3%;
+}
+
+h2{
+    display: flex;
+    flex-wrap:initial;
+    min-height: 50px;
+    text-transform: capitalize;
 }
 
 img{
@@ -26,4 +34,28 @@ img{
 .btn{
     margin-top: 1%;
     text-decoration: none;
+}
+
+
+@media(max-width:1100px){
+    .country{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 46%;
+        line-height: 0.2px;
+        margin-bottom: 3%;
+    }
+}
+@media(max-width:870px){
+    .country{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        line-height: 0.2px;
+        margin-bottom: 3%;
+    }
 }

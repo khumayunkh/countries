@@ -9,6 +9,7 @@ import Pagination from "./Pagination/Pagination";
 function Body(){
     const {countries} = useSelector(state => state.countries)
     const dispatch = useDispatch() 
+    
     const [currentPage, setCurrentPage] = useState(1)
     const [countriesPerPage, serCountriesPerPage] = useState(9)
     
@@ -33,7 +34,7 @@ function Body(){
                     <h3>Region : {item.region}</h3>
                     <h3>Status: {item.status}</h3>
                     <h3 className={style.time_zone}>Time Zone : {item.timezones[0]}, {item.timezones[1]}, {item.timezones[2]}</h3>
-                    <NavLink className={style.btn} to={'/profile/' + item.name.official}>see more</NavLink>
+                    <NavLink className={style.btn} to={'/profile/' + item.name.official}>See more</NavLink>
                    </div>)}
                    <Pagination
                    todosPerPage={countriesPerPage}
